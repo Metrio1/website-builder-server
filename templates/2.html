@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <link rel="stylesheet" href="../../../../../layouts/layout1/index.css" />
+    <link rel="stylesheet" href="../../../../../layouts/normalize.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      :root {
+        --sgcms-header-def-height: 100px;
+        --sgcms-header-sm-height: 100px;
+        --sgcms-sidebar-def-width: 280px;
+      }
+
+      html,
+      body,
+      #root {
+        height: 100dvh;
+        scrollbar-gutter: stable;
+        box-sizing: border-box;
+        overflow: visible;
+      }
+
+      .sgcms-layout {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+      }
+      .sgcms-layout__header-container {
+        background-color: var(--header-color);
+        box-sizing: border-box;
+        padding: 10px 15px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        width: 100%;
+        min-height: var(--sgcms-header-def-height);
+      }
+      .sgcms-layout__main {
+        background-color: var(--main-color);
+        display: flex;
+        flex: 1 0 auto;
+      }
+      @media screen and (min-width: 800px) {
+        .sgcms-layout__main__sidebar-container {
+          top: 0;
+          position: sticky;
+          margin-top: calc(var(--sgcms-header-def-height) * -1);
+          background-color: var(--sidebar-color);
+          width: var(--sgcms-sidebar-def-width);
+          height: calc(100% + var(--sgcms-header-def-height));
+          box-sizing: border-box;
+        }
+        .sgcms-layout__main__sidebar-container__list-container {
+          flex-direction: column;
+          padding-top: var(--sgcms-header-def-height);
+          height: 100%;
+          width: 100%;
+          display: flex;
+          box-sizing: border-box;
+        }
+        .sgcms-layout__main__sidebar-container__list-container__wrapper {
+          overflow: auto;
+          box-sizing: border-box;
+          height: 100%;
+        }
+        .sgcms-layout__main__sidebar-container__list-container__wrapper-block {
+          display: block;
+          height: 150px;
+          width: 100%;
+          background-color: #dadada;
+        }
+      }
+      @media (min-width: 800px) {
+        .sgcms-layout__main__main-container {
+          flex-grow: 1;
+          max-width: calc(100% - var(--sgcms-sidebar-def-width));
+        }
+      }
+      @media (max-width: 800px) {
+        .sgcms-layout__main__sidebar-container__list-container__wrapper-block {
+          background-color: black;
+          display: none;
+        }
+      }
+      .sgcms-layout__main__main-container {
+        width: 100%;
+      }
+      .sgcms-layout__footer-container {
+        box-sizing: border-box;
+        padding: 10px 15px;
+        background-color: var(--footer-color);
+        min-height: 320px;
+        width: 100%;
+      }
+
+      .asd {
+        height: 150px;
+        width: 100%;
+        background-color: #dadada;
+      }
+
+      /*# sourceMappingURL=index.css.map */
+    </style>
+  </head>
+  <body>
+    <div class="sgcms-layout">
+      <header class="sgcms-layout__header-container"></header>
+
+      <main class="sgcms-layout__main">
+        <div class="sgcms-layout__main__main-container">
+          <div class="sgcms-layout__main__main-container-0"></div>
+          <div class="sgcms-layout__main__main-container-1"></div>
+          <div class="sgcms-layout__main__main-container-2"></div>
+          <div class="sgcms-layout__main__main-container-3"></div>
+          <div class="sgcms-layout__main__main-container-4"></div>
+        </div>
+      </main>
+      <footer class="sgcms-layout__footer-container"></footer>
+    </div>
+  </body>
+</html>

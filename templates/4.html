@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="../normalize.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      :root {
+        --sgcms-header-def-height: 80px;
+        --sgcms-header-sm-height: 60px;
+        --sgcms-sidebar-def-width: 280px;
+      }
+
+      html,
+      body,
+      #root {
+        height: 100dvh;
+        scrollbar-gutter: stable;
+        box-sizing: border-box;
+        overflow: visible;
+      }
+
+      .sgcms-layout {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+      }
+      .sgcms-layout__header-container {
+        background-color: #4c4c4c;
+        box-sizing: border-box;
+        padding: 10px 15px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        width: 100%;
+        min-height: var(--sgcms-header-def-height);
+      }
+      .sgcms-layout__main {
+        flex: 1 0 auto;
+      }
+      @media screen and (min-width: 800px) {
+        .sgcms-layout__main__sidebar-container {
+          display: flex;
+          top: 0;
+          position: sticky;
+          background-color: #2a2a2a;
+          width: 100vw;
+          max-height: 50px;
+          height: 50px;
+          box-sizing: border-box;
+        }
+        .sgcms-layout__main__sidebar-container__list-container {
+          display: flex;
+          flex-direction: row;
+          height: 50px;
+          width: 100%;
+        }
+        .sgcms-layout__main__sidebar-container__list-container__wrapper {
+          justify-content: space-evenly;
+          box-sizing: border-box;
+          height: 50px;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+        }
+        .sgcms-layout__main__sidebar-container__list-container__wrapper-block {
+          padding-top: 10px;
+          text-align: center;
+          height: 40px;
+          width: 100px;
+          background-color: #dadada;
+        }
+      }
+      @media screen and (max-width: 800px) {
+        .sgcms-layout__main__sidebar-container__list-container__wrapper-block {
+          display: none;
+        }
+      }
+      .sgcms-layout__main__main-container {
+        width: 100%;
+      }
+      .sgcms-layout__footer-container {
+        box-sizing: border-box;
+        padding: 10px 15px;
+        background-color: #706f6f;
+        min-height: 80px;
+        width: 100%;
+      }
+
+      .asd {
+        height: 150px;
+        width: 100%;
+        background-color: #dadada;
+      }
+
+      /*# sourceMappingURL=index.css.map */
+    </style>
+  </head>
+  <body>
+    <div class="sgcms-layout">
+      <header class="sgcms-layout__header-container"></header>
+
+      <main class="sgcms-layout__main">
+        <aside class="sgcms-layout__main__sidebar-container">
+          <div class="sgcms-layout__main__sidebar-container__list-container">
+            <div
+              class="sgcms-layout__main__sidebar-container__list-container__wrapper"
+            >
+              <a
+                href="#"
+                class="sgcms-layout__main__sidebar-container__list-container__wrapper-block"
+                >Кнопка 1</a
+              >
+              <a
+                href="#"
+                class="sgcms-layout__main__sidebar-container__list-container__wrapper-block"
+                >Кнопка 2</a
+              >
+              <a
+                href="#"
+                class="sgcms-layout__main__sidebar-container__list-container__wrapper-block"
+                >Кнопка 3</a
+              >
+              <a
+                href="#"
+                class="sgcms-layout__main__sidebar-container__list-container__wrapper-block"
+                >Кнопка 4</a
+              >
+              <a
+                href="#"
+                class="sgcms-layout__main__sidebar-container__list-container__wrapper-block"
+                >Кнопка 5</a
+              >
+              <a
+                href="#"
+                class="sgcms-layout__main__sidebar-container__list-container__wrapper-block"
+                >Кнопка 6</a
+              >
+              <a
+                href="#"
+                class="sgcms-layout__main__sidebar-container__list-container__wrapper-block"
+                >Кнопка 7</a
+              >
+              <a
+                href="#"
+                class="sgcms-layout__main__sidebar-container__list-container__wrapper-block"
+                >Кнопка 8</a
+              >
+              <a
+                href="#"
+                class="sgcms-layout__main__sidebar-container__list-container__wrapper-block"
+                >Кнопка 9</a
+              >
+              <a
+                href="#"
+                class="sgcms-layout__main__sidebar-container__list-container__wrapper-block"
+                >Кнопка 10</a
+              >
+            </div>
+          </div>
+        </aside>
+        <div class="sgcms-layout__main__main-container">
+          <div class="asd">фыафыфыв</div>
+          <div class="asd">фыафыфыв</div>
+          <div class="asd">фыафыфыв</div>
+          <div class="asd">фыафыфыв</div>
+          <div class="asd">фыафыфыв</div>
+          <div class="asd">фыафыфыв</div>
+          <div class="asd">фыафыфыв</div>
+          <div class="asd">фыафыфыв</div>
+          <div class="asd">фыафыфыв</div>
+        </div>
+      </main>
+      <footer class="sgcms-layout__footer-container"></footer>
+    </div>
+  </body>
+</html>

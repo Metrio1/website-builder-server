@@ -1,0 +1,74 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 29px;
+  color: #2f2f2f;
+  /* font-family: "Century Gothic"; */
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 41px;
+  border: 2px solid #00019b;
+  border-radius: 5px;
+  transition: 0.5s background, 0.5s color;
+  -webkit-transition: 0.5s background, 0.5s color;
+}
+
+.btn:hover {
+  background: #00019b;
+  color: white;
+}
+
+.ibanner-content {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 300px;
+  background-color: white;
+  border: 1px solid #b0a864;
+  padding: 30px 39px 49px;
+}
+
+.ibanner__title {
+  /*min-height: 150px;*/
+  color: #2f2f2f;
+  /* font-family: "Century Gothic"; */
+  font-size: 30px;
+  word-wrap: break-word;
+  line-height: 42px;
+  margin-bottom: 30px;
+}
+
+.ibanner__title b {
+  font-weight: 700;
+}
+
+@media (max-width: 450px) {
+  .ibanner-content {
+    right: 0px;
+    /*width: calc(100% - 60px);*/
+    /*left: 30px;*/
+    /*top: 0;*/
+    /*margin: 40px 0 50px;*/
+    /*right: auto;*/
+    /*position: relative;*/
+  }
+}
+
+@media (max-width: 1024px) {
+  .ibanner__title {
+    font-size: 25px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+  .ibanner-content {
+    width: 300px;
+    padding-bottom: 39px;
+  }
+}

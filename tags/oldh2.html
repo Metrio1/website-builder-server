@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="../normalize.css" />
+    <style>
+      .header {
+        height: 80px;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .menu-container {
+        border: 1px solid black;
+        width: 45px;
+        display: grid;
+        margin: 18px;
+        padding: 1px;
+      }
+
+      .container-2 {
+        border: 1px solid black;
+        width: 450px;
+        display: grid;
+        margin: 18px;
+        padding: 1px;
+      }
+
+      .container-3 {
+        border: 1px solid black;
+        width: 300px;
+        display: grid;
+        margin: 18px;
+        padding: 1px;
+      }
+
+      .container-4 {
+        border: 1px solid black;
+        width: 450px;
+        display: flex;
+        justify-content: space-around;
+        margin: 18px;
+        padding: 1px;
+      }
+
+      .container-5 {
+        border: 1px solid black;
+        width: 45px;
+        display: flex;
+        justify-content: space-around;
+        margin: 18px;
+        padding: 1px;
+      }
+
+      #burger:checked ~ .burger-lines .line1 {
+        transform: rotate(45deg);
+      }
+
+      #burger:checked ~ .burger-lines .line2 {
+        transform: scaleY(0);
+      }
+
+      #burger:checked ~ .burger-lines .line3 {
+        transform: rotate(-45deg);
+      }
+
+      .checkbox {
+        display: none;
+      }
+
+      @media screen and (max-width: 1350px) {
+        .container-2 {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 800px) {
+        .container-4 {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 800px) {
+        header:has(#burger:checked) ~ main .aside {
+          transform: translateX(0);
+        }
+        .aside {
+          transform: translateX(-150%);
+        }
+        .checkbox {
+          margin: 8px;
+          display: block;
+          grid-area: 1/1;
+          z-index: 5;
+          opacity: 0;
+          cursor: pointer;
+        }
+        .burger-lines {
+          margin: 8px;
+          grid-area: 1/1;
+          z-index: 2;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        .line {
+          display: block;
+          height: 4px;
+          width: 100%;
+          border-radius: 10px;
+          background: #0e2431;
+        }
+        .burger-lines .line1 {
+          transform-origin: 0% 0%;
+          transition: transform 0.4s ease-in-out;
+        }
+        .burger-lines .line2 {
+          transition: transform 0.2s ease-in-out;
+        }
+        .burger-lines .line3 {
+          transform-origin: 0% 100%;
+          transition: transform 0.4s ease-in-out;
+        }
+      }
+
+      /*# sourceMappingURL=index.css.map */
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="menu-container">
+        <input class="checkbox" type="checkbox" name="" id="burger" />
+        <div class="burger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+      </div>
+      <div class="container-2"></div>
+      <div class="container-3"></div>
+      <div class="container-4"></div>
+      <div class="container-5"></div>
+    </div>
+  </body>
+</html>

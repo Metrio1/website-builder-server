@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <link rel="stylesheet" href="../normalize.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <style>
+      h1 {
+        margin: 0;
+      }
+
+      .btn {
+        display: inline-block;
+        text-align: center;
+        padding: 0 5px;
+        color: #2f2f2f;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 20px;
+        border: 2px solid #00019b;
+        border-radius: 5px;
+        transition: 0.5s background, 0.5s color;
+        word-break: break-word;
+      }
+
+      .btn:hover {
+        background: #00019b;
+        color: white;
+      }
+
+      .list-flex {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        box-sizing: border-box;
+        padding: var(--gap);
+      }
+
+      .list-flex__element {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        padding: 16px;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        margin-bottom: 16px;
+      }
+
+      .list-flex__element__image {
+        max-width: 6%;
+        max-height: 6%;
+        text-align: center;
+        margin-right: 16px; /* Отступ между изображением и текстом */
+      }
+
+      /* .list-flex__element__image img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        display: block;
+      } */
+
+      .content {
+        display: flex;
+        flex-grow: 1;
+      }
+
+      .list-flex__element__text-wrapper__header-element,
+      .list-flex__element__text-wrapper__text-element {
+        margin-right: 16px;
+        color: #333;
+        word-break: break-all;
+      }
+
+      .list-flex__element__button-element {
+        min-width: 100px;
+        margin-left: auto;
+      }
+
+      .list__image {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="list-flex">
+      <div class="list-flex__element list-flex__element__1">
+        <div
+          class="list-flex__element__image list-flex__element__image__1"
+        ></div>
+        <div class="list-flex__element__text-wrapper">
+          <div
+            class="list-flex__element__text-wrapper__header-element list-flex__element__text-wrapper__header-element__1"
+          ></div>
+          <div
+            class="list-flex__element__text-wrapper__text-element list-flex__element__text-wrapper__text-element__1"
+          ></div>
+        </div>
+        <div
+          class="list-flex__element__button-element list-flex__element__button-element__1"
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>

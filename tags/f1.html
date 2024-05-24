@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="../normalize.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <style>
+      .round-button {
+        margin: 2px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        color: rgb(0, 0, 0);
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none; /* Ensure no underline */
+        font-size: 24px; /* Adjust font size as needed */
+      }
+
+      .footer {
+        display: grid;
+        max-height: 320px;
+        grid-template-rows: 3fr 1fr;
+        gap: 10px;
+      }
+      .footer-top {
+        margin-left: 10%;
+        margin-right: 10%;
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        padding: 1px;
+      }
+      .footer-top1 {
+        max-width: 100%;
+        overflow: hidden;
+        word-wrap: break-word;
+        border: 1px solid black;
+      }
+
+      .footer-top2 {
+        border: 1px solid black;
+      }
+
+      .footer-top2__link {
+        text-align: center;
+        border: 1px solid black;
+        width: 100%;
+        height: 40px;
+      }
+
+      .footer-top3 {
+        border: 1px solid black;
+      }
+
+      .footer-top3__phone {
+        text-align: center;
+        border: 1px solid black;
+        width: 100%;
+        height: 60px;
+      }
+
+      .footer-top3__e-mail {
+        text-align: center;
+        border: 1px solid black;
+        width: 100%;
+        height: 60px;
+      }
+
+      .footer-top4 {
+        border: 1px solid black;
+      }
+      .footer-bottom {
+        margin-left: 10%;
+        margin-right: 10%;
+        border: 1px solid black;
+      }
+
+      .footer-bottom__social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px; /* Adjust the gap between buttons as needed */
+      }
+
+      /*# sourceMappingURL=index.css.map */
+    </style>
+  </head>
+  <body>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-top1"></div>
+        <div class="footer-top2">
+          <div class="footer-top2__link footer-top2__link-1"></div>
+          <div class="footer-top2__link footer-top2__link-2"></div>
+          <div class="footer-top2__link footer-top2__link-3"></div>
+          <div class="footer-top2__link footer-top2__link-4"></div>
+          <div class="footer-top2__link footer-top2__link-5"></div>
+        </div>
+        <div class="footer-top3">
+          <div class="footer-top3__phone"></div>
+          <div class="footer-top3__e-mail"></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom__social-media"></div>
+      </div>
+    </footer>
+  </body>
+</html>

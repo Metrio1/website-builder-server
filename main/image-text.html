@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="../normalize.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <style>
+      img {
+        border-radius: 20px;
+      }
+
+      .image-text {
+        display: grid;
+        max-height: 400px;
+        margin-left: 10%;
+        margin-right: 10%;
+        grid-template-columns: 1fr 2fr;
+        gap: 10px;
+      }
+      .image-text__image {
+        word-break: normal;
+        display: grid;
+      }
+      .image-text__text {
+        display: grid;
+        overflow: auto;
+        word-wrap: break-word;
+        word-break: break-all;
+      }
+
+      body,
+      html {
+        max-width: 100%;
+        overflow-x: hidden;
+      }
+
+      /*# sourceMappingURL=index.css.map */
+    </style>
+  </head>
+  <body>
+    <div class="image-text">
+      <div class="image-text__image"></div>
+      <div class="image-text__text"></div>
+    </div>
+  </body>
+</html>
